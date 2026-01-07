@@ -1,22 +1,22 @@
 from scapy.all import sniff, IP, TCP, UDP, ICMP
 
-def process_packet(packet):
-    # run only if packet has IP layer
-    if IP in packet:
-        src = packet[IP].src      # source
-        dst = packet[IP].dst      # destination
+def process_pkt(pkt):
+    # run only if pkt has IP layer
+    if IP in pkt:
+        src = pkt[IP].src      # source
+        dst = pkt[IP].dst      # destination
 
         # default
         protocol = "OTHER"
 
-        if TCP in packet:
+        if TCP in pkt:
             protocol = "TCP"
-        elif UDP in packet:
+        elif UDP in pkt:
             protocol = "UDP"
-        elif ICMP in packet:
+        elif ICMP in pkt:
             protocol = "ICMP"
 
         print(f"Source: {src}  -->  Destination: {dst}  | Protocol: {protocol}")
 
-# capture 25 packets
-sniff(prn=process_packet, count=25)
+# capture 25 pkts
+sniff(prn=process_pkt, count=25)
