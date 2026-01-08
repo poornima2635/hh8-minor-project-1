@@ -18,5 +18,5 @@ def process_pkt(pkt):
 
         print(f"Source: {src}  -->  Destination: {dst}  | Protocol: {protocol}")
 
-# capture 25 pkts
-sniff(prn=process_pkt, count=25)
+# capture pkts
+sniff(prn=process_pkt, count=100)
