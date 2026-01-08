@@ -35,7 +35,7 @@ The focus was on proper setup so that development and commits could be done smoo
 - Fixed Python execution issues on Windows
 - Developed a Python-based packet sniffer using Scapy
 - Captured live network packets
-- Displayed source IP, destination IP, and protocol (TCP/UDP/ICMP)
+- Displayed source IP, destination IP, and protocol (TCP/UDP)
 - Successfully ran the program and observed real packet output
 - Committed and pushed the working code to GitHub
 

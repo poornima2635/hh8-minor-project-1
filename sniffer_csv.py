@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP, ICMP 
+from scapy.all import sniff, IP, TCP, UDP
 import csv
 
 file = open("captured_packet.csv", mode="w", newline="")
@@ -15,8 +15,6 @@ def process_packet(packet):
             protocol = "TCP"
         elif UDP in packet:
             protocol = "UDP"
-        elif ICMP in packet:
-            protocol = "ICMP"
 
         print(f"{src} --> {dst} | {protocol}")
 
