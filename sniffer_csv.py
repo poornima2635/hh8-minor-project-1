@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP
+from scapy.all import sniff, IP, TCP, UDP 
 import csv
 
 file = open("captured_packet.csv", mode="w", newline="")
