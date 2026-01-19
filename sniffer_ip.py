@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP, ICMP
+from scapy.all import sniff, IP, TCP, ICMP, UDP
 
 def process_packet(packet):
     # runs only if pkt has IP layer
