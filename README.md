@@ -65,3 +65,9 @@ No coding was done. The focus was on proper environment setup and GitHub integra
 - Using Wireshark for packet verification
 - Using Git and GitHub for version control
 - Debugging and resolving real-world development issues
+
+## Ethical Note
+This project was developed and tested only on my own system and network for educational purposes as part of a cybersecurity internship.
+
+## Output Screenshots
+Screenshots of terminal output, CSV file, and Wireshark packet capture are included in the output folder.
