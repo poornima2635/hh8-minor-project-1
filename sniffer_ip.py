@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP
+from scapy.all import sniff, IP, TCP, UDP, ICMP
 
 def process_packet(packet):
     # runs only if pkt has IP layer
@@ -13,6 +13,8 @@ def process_packet(packet):
             protocol = "TCP"
         elif UDP in packet:
             protocol = "UDP"
+        elif UDP in packet:
+            protocol = "ICMP"
 
         print(f"Source: {src}  -->  Destination: {dst}  | Protocol: {protocol}")
 
